@@ -232,7 +232,7 @@ def predict(request, ticker_value, number_of_days):
     df_ml.dropna(inplace=True)
 
     # Prepare data for LSTM
-    X = np.array(df_ml.drop(['Prediction'], 1))
+    X = np.array(df_ml.drop(['Prediction'], axis=1))
     y = np.array(df_ml['Prediction'])
 
     # Reshape the data for LSTM (samples, time steps, features)
