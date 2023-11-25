@@ -1,0 +1,7 @@
+python manage.py migrate
+
+
+C:\Users\onkar\Downloads\x\Stock-main\venv\Scripts\Activate.ps1
+
+
+python manage.py runserver
